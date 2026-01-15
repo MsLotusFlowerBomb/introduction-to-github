@@ -1,6 +1,6 @@
 # Simple C# Calculator Console App
 
-A basic console-based calculator application built with C# that performs arithmetic operations.
+A console-based calculator application built with C# using Object-Oriented Programming (OOP) principles.
 
 ## Features
 
@@ -10,6 +10,34 @@ A basic console-based calculator application built with C# that performs arithme
 - Division (/)
 - Division by zero error handling
 - Option to perform multiple calculations in a single session
+
+## Architecture (OOP Design)
+
+The application follows object-oriented programming principles with the following classes:
+
+### Classes
+
+- **`Program`**: Entry point of the application
+- **`CalculatorApplication`**: Manages the user interface and application workflow
+  - Handles user interaction
+  - Coordinates between input validation and calculation
+- **`Calculator`**: Performs arithmetic operations
+  - `Add(double a, double b)`: Addition operation
+  - `Subtract(double a, double b)`: Subtraction operation
+  - `Multiply(double a, double b)`: Multiplication operation
+  - `Divide(double a, double b)`: Division operation with zero-check
+  - `Calculate(double num1, double num2, string operation)`: Dispatcher method
+- **`InputValidator`**: Validates user input
+  - `TryGetNumber(string prompt, out double number)`: Validates numeric input
+  - `IsValidOperation(string operation)`: Validates operation symbols
+
+### OOP Concepts Demonstrated
+
+- **Encapsulation**: Each class has a single, well-defined responsibility
+- **Abstraction**: Implementation details hidden behind clean public interfaces
+- **Separation of Concerns**: UI logic, validation, and calculation logic are separated
+- **Exception Handling**: Custom exceptions for error conditions
+- **XML Documentation**: Classes and methods are documented
 
 ## Requirements
 
