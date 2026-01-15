@@ -1,4 +1,7 @@
 ﻿// Simple C# Calculator Console App using OOP principles
+using System;
+using System.Linq;
+
 namespace CalculatorApp
 {
     /// <summary>
