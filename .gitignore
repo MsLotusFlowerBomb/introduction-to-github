@@ -35,3 +35,12 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# .NET build artifacts #
+########################
+bin/
+obj/
+*.user
+*.suo
+*.cache
+.vs/
